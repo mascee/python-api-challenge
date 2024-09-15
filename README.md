@@ -13,3 +13,9 @@ With wind statistics - it looks like it’s more windy in Antarctica compared to
 In general with latitudes between -35 and 35 climate is more mild - with temperatures between 15 to 30 C. With latitudes -20 to 20 temperatures are between 20 C to 30 C, but with a chance of higher humidity.
 For people who prefer colder climates, but don’t like the wind, the Northern Hemisphere with latitudes less than 35 is more pleasant. 
 For adventurous spirited people, who don’t mind high winds and low temperatures, these graphs are not important. 
+
+
+_______________________________________________________________
+In WeatherPy file while parsing API, there were some inconsistencies with "Sys" part, where "Country" is stored. Ideally Sys supposed to show Country, Sunset and Sunrise, per documentation, but sometimes shows only one parameter. Therefore in some cases Country parameter could be missing.
+
+In VacationPy "Radius" search for hotels shows inconsistent results, in some cases it doesn't show any hotels. Maybe some other searches are better, like finding nearest hotel, instead of 10000 m radius.
